@@ -1,10 +1,14 @@
 import { Container } from "./styles";
 import { Text } from 'react-native'
+import { Person } from "../../components/Person";
 
 export function Home(){
     return (
-        <Container>
-            <Text>arawrwa</Text>
-        </Container>
+        <>
+            <Person />
+            <Container>
+                <Text>arawrwa</Text>
+            </Container>
+        </>
     )
 }
