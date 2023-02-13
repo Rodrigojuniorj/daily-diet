@@ -16,7 +16,8 @@ export const Logo = styled.Image`
 `;
 
 export const PersonImage = styled.Image`
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 999px;
+  border: 2px solid ${({ theme }) => theme.COLORS.GRAY_1};
 `
