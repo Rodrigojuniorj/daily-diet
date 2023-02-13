@@ -21,6 +21,7 @@ export const Container = styled(TouchableOpacity)<Props>`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 `;
 
 export const Title = styled.Text`
@@ -38,10 +39,15 @@ export const Description = styled.Text`
     font-family: ${theme.FONT_FAMILY.REGULAR};
   `};
 `
-export const Icon = styled(ArrowUpRight).attrs(({ theme }) => ({
-  size: 32,
-  color: theme.COLORS.GREEN_DARK,
-  weight: 'fill'
+
+export const WrapperIcon = styled.View`
+  position: absolute;
+  right: 10px;
+  top: 10px;
+`;
+
+export const Icon = styled(ArrowUpRight).attrs(({ theme}) => ({
+  size: 24,
+  weight: "bold",
 }))`
-  margin-right: 20px;
 `;

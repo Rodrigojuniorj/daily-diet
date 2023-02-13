@@ -8,7 +8,7 @@ export function Home() {
     <>
       <Person />
       <Container>
-        <Card percent="50%" />
+        <Card percent="50,98%" />
       </Container>
     </>
   )
